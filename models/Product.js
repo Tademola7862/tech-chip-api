@@ -16,7 +16,7 @@ const productSchema = new mongoose.Schema(
       type: Number,
       required: [true, "Product price is required"],
       min: [1, "Zero price not allowed"],
-      max: [1000, "Price too high"]
+      max: [30000, "Price too high"]
     },
     updated_at: { type: Date, default: Date.now }
   },
